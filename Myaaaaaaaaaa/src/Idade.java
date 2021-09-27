@@ -5,23 +5,23 @@ public class Idade {
 		int[] a = new int [10];
 		System.out.println("-------------------JOGO DO BICHO --------------------");
 		System.out.println();
-		System.out.println("Preencha a tabela com 10 números diferentes de 1 a 100");
+		System.out.println("Preencha a tabela com 10 numeros diferentes de 1 a 100");
 		System.out.println();
 		
 		for(int j = 0; j<a.length; j++) {
-		System.out.println("Número "+ (j+1) +": ");
+		System.out.println("Numero "+ (j+1) +": ");
 		a[j] = scanner.nextInt();}
 		
-        System.out.print("Os seus bichos são: ");
+        System.out.print("Os seus bichos sao: ");
 		String bicho = "";
 		for(int i =0; i<a.length; i++) {
 			if((a[i]>100)||(a[i]<1)){
-				System.out.println("Não tem esse número no jogo do Bicho, mané");
+				System.out.println("Nao tem esse numero no jogo do Bicho, mano");
 				
 			} else {
 				bicho =	        (a[i]<11)?    "Cabra":
 					            (a[i]<21)?   "Cavalo":
-					            (a[i]<31)?   "Dragão":
+					            (a[i]<31)?   "Dragao":
 					            (a[i]<41)?   "Jiboia":	
 					            (a[i]<51)?    "Ganso": 
 					            (a[i]<61)?   "Raposa":
@@ -31,7 +31,11 @@ public class Idade {
 					            	           "Gato";
 			}
 			System.out.printf("%s, ",bicho);
+			scanner.close(); 
 		}
+		
 	  }
 
+
+	
 }

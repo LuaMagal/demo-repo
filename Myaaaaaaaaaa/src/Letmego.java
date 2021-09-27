@@ -9,7 +9,7 @@ public class Letmego {
 	Random num = new Random();
 	
 	
-	int conf, adic, roll, quant, soma = 0, rolagem = 0;
+	int conf, adic, quant, soma = 0, rolagem = 0;
 	
 	do {
 	soma= 0;
@@ -32,7 +32,7 @@ public class Letmego {
 			quant-=1;
 			soma += (adic+d20);
 	}while(quant!=0);	
-		System.out.println("A soma dos dados é "+soma);
+		System.out.println("A soma dos dados e "+soma);
 		break;
 	
 	
@@ -44,7 +44,7 @@ public class Letmego {
 		quant-=1;
 		soma += (adic+d12);
 	}while(quant!=0);
-		System.out.println("A soma dos dados é "+soma);
+		System.out.println("A soma dos dados e "+soma);
 	break;
 	
 	
@@ -56,7 +56,7 @@ public class Letmego {
 		soma += (adic+d10);
 		quant-=1;
 	}while(quant!=0);
-		System.out.println("A soma dos dados é "+soma);
+		System.out.println("A soma dos dados e "+soma);
 	break;
 	
 	
@@ -68,7 +68,7 @@ public class Letmego {
 			quant-=1;
 			soma += (adic+d8);
 	}while(quant!=0);
-		System.out.println("A soma dos dados é "+soma);
+		System.out.println("A soma dos dados e "+soma);
 		break;
 	
 	
@@ -80,7 +80,7 @@ public class Letmego {
 			quant-=1;
 			soma += (adic+d6);
 	}while(quant!=0);
-		System.out.println("A soma dos dados é "+soma);
+		System.out.println("A soma dos dados e "+soma);
 		break;
 	
 	
@@ -91,12 +91,12 @@ public class Letmego {
 			("A sua rolagem foi " + d4 + "+" + "("+adic+") = "+(adic+d4));
 			quant-=1;
 			soma += (adic+d4);
-			System.out.println("A soma dos dados é "+soma);
+			System.out.println("A soma dos dados e "+soma);
 	}while(quant!=0);	
 		break;
 	
 	
-	default: System.out.println("Dado não existe");
+	default: System.out.println("Dado nao existe");
 	}
 	
     System.out.println();
@@ -114,7 +114,7 @@ public class Letmego {
 	}
     
 	
-	
+	scanner.close();
 	
 	}
 }

@@ -54,6 +54,8 @@ do {
     	}
         }
  }while(roll != 0);	
-            
+ scanner.close();  
+ 
+
        }  
 	}

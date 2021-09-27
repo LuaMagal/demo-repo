@@ -29,7 +29,7 @@ public class DadosRPG {
 		
 		Scanner scanner = new Scanner(System.in);
 		Random num = new Random();
-		int conf, roll, soma = 0;
+		int  soma = 0;
 		
 		soma = 0;		
 	    do {
@@ -41,6 +41,9 @@ public class DadosRPG {
 		}while(quant!=0);	
 			System.out.println("A soma dos dados � "+soma);
 	    
+			scanner.close();
 	}
+ 
+  
 
 }
